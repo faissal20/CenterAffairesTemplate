@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&family=Inter:wght@100;400&display=swap');
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #212121;
+    font-family: 'Cabin', sans-serif;
+    scroll-behavior: smooth;
+}
+.app__heading{
+    margin: 1rem 2rem 4rem 1rem;
+}
+.app__heading h1{
+    text-align: center;
+    color: #fff;
+    font-family: 'Inter', 'sans-serif';
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+svg{
+    fill: #fff;
+    width: 20px;
+    color: #fff;
+}
+ p {
+    margin: 4rem 0;
+    justify-self: flex-end;
+    max-width: 600px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #898989;
+}
+
+/*  Nav bar style */ 
+.app__res-navbar{
+    display: none;
+}
+
+.app__navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(pexels-fauxels-3183197.jpg);
+    backdrop-filter: blur(2.5px);
+    transition: all 0.15s ease-out;
+    z-index: 100000000;
+}
+.app__navbar.black{
+    background: #000 !important;
+
+}
+.hidden{
+    transform: translateY(-70px)  !important;
+}
+.app__navbar-brand{
+    flex: 1;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+.app__navbar-brand img{
+    width: 50px;
+}
+.app__navbar-menu{
+    flex: 3;
+}
+.app__navbar-menu ul{
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+    justify-content: flex-end;
+}
+.app__navbar-menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    transition: all 150ms ease-in;
+}
+.app__navbar-menu ul li a:hover{
+    color: #ffffffb0;
+}
+.app__navbar-contact{
+    flex: 1;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.app__navbar-contact_phone{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    color: #fff;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    
+
+}
+.app__navbar-contact_phone:hover{
+    background-color: #2C2E74;
+    transform: scale(1.1);
+}
+.app__navbar-contact_phone i{
+    font-size: 16px;
+}
+.button{
+    padding: .5rem 1rem;
+    border: none;
+    width: max-content;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #2C2E74;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+.button:hover{
+    transform: scale(1.1);
+}
+/* Header section styling */
+
+.app__header{
+    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('./assests/WhatsApp\ Image\ 2022-09-20\ at\ 15.42.04.jpeg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: none;
+   
+}
+.app__header-logo{
+    display: none;
+}
+.app__header-contact{
+    display: none;
+}
+.app__header h1{
+    text-align: center;
+    font-size: 106px;
+    color: #fff;
+    border-bottom: 5px solid #D49032;
+    user-select: none;
+
+}
+.app__header h2{
+    text-align: center;
+    font-size: 36px;
+    margin-top: 2rem;
+    color: #fff;
+    letter-spacing: 6rem;
+    font-weight: 100;
+    font-family: 'Inter', sans-serif;
+    user-select: none;
+}
+
+/* end header styling */
+
+/* start Services section styling */
+
+.app__services{
+    width: 100%;
+    margin: 2rem 0;
+}
+.app__services-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.app__services-content.reverse{
+    flex-direction: row-reverse;
+}
+.app__services-content-img{
+    flex: 1;
+    text-align: center;
+    height: 400px;
+}
+.app__services-content-txt{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 4rem;
+
+}
+.app__services-content-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.app__services-content-txt h4{
+    color: #fff;
+    font-size: 2rem;
+}
+.app__services-content-txt p{
+    text-align: right;
+    margin: 2rem 0;
+}
+
+/* end Services Section styling */
+
+
+.video{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}   
+.video video{
+    max-width: 100%;
+    height: 650px;
+}
+.vidoe-control{
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    inset: 0;
+    margin: auto;
+    background-color: #000000b4;
+    border: 1px solid #ffffff00;
+    border-radius: 50%;
+    z-index: 1000;
+}
+.vidoe-control.active{
+    background-color: #ffffff00;
+    border: 1px solid #fff;
+}
+.vidoe-control svg{
+    fill: #fff;
+    transform: translateX(7%);
+}
+.vidoe-control:hover svg{
+    width: 25px;
+    transition: all .15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+/* start About Section styling */
+.app__about{
+    margin: 6rem 1rem;
+}
+.app__about-content{
+    margin: 4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}  
+.app__about-content_left{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+}
+.app__about-content_left p{
+    line-height: 36px;
+}
+.app__about-content_left a{
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: #fff;
+    background-color: #ffffff00;
+    padding: 10px 20px;
+    margin: .5rem;
+}
+.app__about-content_left a:hover{
+    background-color: #D49032;
+
+}
+.social_media{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+.app__about-content_right {
+    flex: 1;
+    height: 500px;
+    padding: 0 2rem 0 0;
+}
+.social_media i{
+    font-size: 26px;
+    color: white;
+
+}
+
+
+.app__contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('./assests/WhatsApp\ Image\ 2022-09-20\ at\ 15.42.05.jpeg');
+    background-position: bottom;
+    background-attachment: fixed
+}
+.app__contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+.input_field{
+    display: flex;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 1rem 0;
+    align-self: stretch;
+
+}
+.input_field input ,.input_field textarea{
+    flex: 1;
+    outline: 1px transparent;
+    border: none;
+    padding: .6rem 1rem;
+    background-color: #8989896d;
+    color: #fff;
+}
+.input_field input::placeholder, .input_field textarea::placeholder{
+    color: #fff;
+}
+.input_field input:hover, .input_field input:focus .input_field textarea:hover{
+    border: none;
+    outline: 2px solid #D49032;
+    background-color: #8989896d;
+}
+.input_field textarea{
+    padding: 1rem;
+    color: #fff;
+}
+footer{
+    display: grid;
+    place-content: center;
+    background-color: #000;
+    margin: 0 0 0 0 ;
+    padding: 1.5rem ;
+    color: #fff;
+}
+
+@media screen and (max-width: 1150px) {
+    .app__services-content{
+        flex-direction: column;
+    }
+    .app__services-content.reverse{
+        flex-direction: column;
+
+    }
+    .app__services-content-txt{
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 0;
+    }
+    .app__services-content-img img{
+        width: 80%;
+        height: 100%;
+    
+    }
+    .app__about-content{
+        
+        flex-direction: column;
+    } 
+    .app__about-content_right {
+        width: 100%;
+        margin: 2rem;
+        padding: 0;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .app__navbar{
+        padding: 1rem 10rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    p{
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+}
+@media screen and (max-width: 1440px){
+    .app__header h1{
+        font-size: 96px;
+    }
+    .app__header h2{
+        font-size: 24px;
+        letter-spacing: 4rem;
+    }
+}
+@media screen and (max-width: 950px){
+    .app__navbar{
+        padding: 1rem 2rem ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .app__navbar-menu ul{
+      
+        gap: 2rem;
+    
+    }
+    .app__header h1{
+        font-size: 64px;
+    }
+    .app__header h2{
+        font-size: 18px;
+        letter-spacing: 2rem;
+    }
+    p {
+        margin: 4rem 0;
+      
+        
+        font-size: 18px;
+        line-height: 20px;
+      
+    }
+    .input_field{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+        margin: 0;        
+    }
+    .input_field input{
+        width: 100%;
+        padding: .5rem;
+    }
+}
+@media screen and (max-width: 650px){
+    .app__header{
+        padding: 2rem 10px;
+        justify-content: flex-start;
+    }
+    .app__header-logo{
+        display: block;
+        margin: 1.5rem 0;
+    }
+    .app__header-logo img{
+        width: 80px;
+    }
+    .app__header-contact{
+        display: block;
+        
+    }
+    
+    .app__header-contact h4 a{
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        gap: 15px;
+        padding-right: 1rem;
+        font-size: 14px;
+        margin: 2rem 0;
+        color: #fff;
+        background-color: #D49032;
+        transition: all .3s ease-in-out;
+        padding: 10px;
+
+    }
+    
+    .app__header-contact h4 a svg{
+        
+        fill: #fff;
+    }
+    .app__navbar{
+        display: none;
+    }
+    .app__res-navbar{
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        width: 100%;
+        margin: auto;
+    }
+    .app__res-navbar_content{
+        width: 80%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+    }
+    .app__res-navbar_content ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        gap: 30px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(pexels-fauxels-3183197.jpg);
+        padding: 15px 30px;
+        border-radius: 40px;
+    }
+    .app__res-navbar_content svg{
+        font-size: 25px;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    .app__res-navbar_content  i:hover{
+        font-size: 25px;
+        color: rgba(255, 255, 255);
+    }
+    .app__res-navbar_content img{
+        max-width: 50px;
+    }
+    .app__header h1{
+        font-size: 36px;
+    }
+    .app__header h2{
+        font-size: 16px;
+        letter-spacing: 2rem;
+    }
+    p {
+        margin: 2rem 0; 
+      
+        text-align: center;
+        padding: 0 10px;
+        font-size: 18px;
+        line-height: 20px;
+      
+    }
+}
